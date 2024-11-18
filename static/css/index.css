@@ -1,0 +1,46 @@
+body{
+    display: flex;
+
+}
+
+.bannerPage{
+    background-color: rgb(0, 0, 90);
+    width: 100vw;
+    height: 20vh;
+    border: solid;
+    border-color: black;
+
+    display: flex;
+
+
+}
+
+.pageLogo{
+    width: 150px;
+    height: 15vh;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: solid;
+    border-color: red;
+    transition: all 1s;
+}
+
+.pageLogo:hover{
+    width: 180px;
+    height: 18vh;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: solid;
+    border-color: red;
+    border-width: 10px;
+} 
+
+.pageTitle{
+    color: white;
+    font-size: 50px;
+    display: flex;
+    
+}
+
