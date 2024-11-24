@@ -1,6 +1,5 @@
 body{
-    display: flex;
-
+    background-color:antiquewhite   ;
 }
 
 .bannerPage{
@@ -41,6 +40,38 @@ body{
     color: white;
     font-size: 50px;
     display: flex;
+    margin: 40px;
     
+}
+
+
+.colorZone{
+    background-color: black;
+    width: 700px;
+    height: 450px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    border-radius: 10px;
+    border: solid;
+    border-width: 10px;
+    border-color: red;
+}
+
+.h2color{
+    color: white;
+    padding: 250px;
+}
+
+.buttonStart{
+    margin-left: 45vw;
+    margin-right: 45vw;
+    background-color: rgb(0, 0, 88);
+    color: aliceblue;
+    border: solid;
+    border-color: red;
+    border-radius: 5px;
+    border-width: 5px;
 }
 
