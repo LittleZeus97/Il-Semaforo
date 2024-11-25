@@ -46,23 +46,44 @@ body{
 
 
 .colorZone{
+    display: flex;
     background-color: black;
-    width: 700px;
-    height: 450px;
+    width: 750px;
+    height: 500px;
     margin-top: 80px;
     margin-bottom: 80px;
-    margin-left: 25vw;
+    margin-left: 23vw;
     margin-right: 25vw;
     border-radius: 10px;
-    border: solid;
-    border-width: 10px;
-    border-color: red;
+    
+    
 }
 
-.h2color{
-    color: white;
-    padding: 250px;
+.colorCircle1{
+
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: solid;
+    border-width: 3px;
+    border-color: rgb(73, 73, 73);
+    background-color: rgb(104, 104, 104);
+    margin: 30px;
 }
+
+.colorCircle2{
+
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: solid;
+    border-width: 3px;
+    border-color: rgb(73, 73, 73);
+    background-color: rgb(104, 104, 104);
+    margin: 30px;
+}
+
+
 
 .buttonStart{
     margin-left: 45vw;
@@ -73,5 +94,17 @@ body{
     border-color: red;
     border-radius: 5px;
     border-width: 5px;
+}
+
+.off{
+    background-color: rgb(161, 161, 161);
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
 }
 
