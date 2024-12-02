@@ -13,114 +13,19 @@
         <h1 class="pageTitle">TESTA I TUOI RIFLESSI!</h1>
     </div>
 
-    <div onclick="punteggio" id="colorZone" class="colorZone">
-        <div class="firstRow">
-            <div class="colorCircle2"></div>
-            <div class="colorCircle2"></div>
-            <div class="colorCircle1"></div>
-            <div class="colorCircle1"></div>
-        </div>
-        <div class="secondRow">
-            <div class="colorCircle2"></div>
-            <div class="colorCircle2"></div>
-            <div class="colorCircle1"></div>
-            <div class="colorCircle1"></div>
-        </div>
-        <div class="thirdRow">
-            <div class="colorCircle2"></div>
-            <div class="colorCircle2"></div>
-            <div class="colorCircle1"></div>
-            <div class="colorCircle1"></div>
-        </div>
-        <div class="fourthRow">
-            <div class="colorCircle2"></div>
-            <div class="colorCircle2"></div>
-            <div class="colorCircle1"></div>
-            <div class="colorCircle1"></div>
-        </div>
-        <div class="fifthRow">
-            <div class="colorCircle2"></div>
-            <div class="colorCircle2"></div>
-            <div class="colorCircle1"></div>
-            <div class="colorCircle1"></div>
-        </div>
+    <div class="signal">
+        <div class="firstBall"></div>
+        <div class="secondBall"></div>
+        <div class="thirdBall"></div>
     </div>
+
+    <div class="buttons">
+        <button class="Start">Inizia il gioco</button>
+        <button class="Stop">Ferma!!</button>
+    </div>
+
     
-    <div class="button">
-        <button onclick="attivazione" class="buttonStart">inizia il test!</button>
-    </div>
-
-    <div class="punteggio">
-        <p>il tuo punteggio è:</p>
-    </div>
-
-    <script>
-        let now;
-        let now1;
-        let milliSeconds=0;
-        let milliSeconds1=0;
-        let score=0;
-        let elemento;
-        let elemento1;
-        
-
-        function firstRed(){
-            elemento.classList.remove("off");
-
-            elemento.classList.add("red");
-            setTimeout(secondRed,1000);
-        }
-
-        function secondRed(){
-            elemento1.classList.remove("off");
-
-            elemento1.classList.add("red");
-            setTimeout(green, 2000);
-        }
-        
-        function green(){
-            elemento.classList.remove("red");
-            elemento1.classList.remove("red");
-
-            elemento1.classList.add("green");
-            elemento1.classList.add("greed");
-
-            now = new Date();
-
-           
-
-
-
-        }
-
-        function attivazione(){
-            elemento=document.querySelector("colorCircle1");
-            elemento1=document.querySelector("colorCircle2");
-            
-
-            elemento.classList.add("off");
-            elemento1.classList.add("off");
-        
-
-            setTimeout(firstRed, 1000);
-        }
-
-        function punteggio(){
-            now1=new Date();
-
-            milliSeconds=now.getMilliseconds();
-            milliSeconds1=now1.getMilliseconds();
-            punteggio=milliSeconds-milliSeconds1;
-            document.querySelector("risultati").inneHTML="il tuo punteggio è di: " + punteggio +"ms;";
-
-        }
-        
-
-        
-
-
-
-
-    </script>
 </body>
 </html>
+
+<!-- ocra (223,178,1) -->
