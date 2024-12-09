@@ -135,6 +135,13 @@ body{
     color:white;
 }
 
+.point{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .off{
     background-color: rgb(161, 161, 161);
 }

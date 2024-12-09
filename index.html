@@ -24,6 +24,79 @@
         <button class="Stop">Ferma!!</button>
     </div>
 
+    <div>
+        <p class="point">il tuo punteggio è;</p>
+    </div>
+
+    <script>
+
+        let buttonStart = document.querySelector(".Start");
+        let buttonStop = document.querySelector(".Stop");
+        let ball1 = document.querySelector(".firstBall");
+        let ball2 = document.querySelector(".secondBall");
+        let ball3 = document.querySelector(".thirdBall");
+        let time;
+        let time1;
+        buttonStart.addEventListener("click", function(){
+            console.log("HELLO")
+            ball1.classList.add("off");
+            ball2.classList.add("off");
+            ball3.classList.add("off");
+
+            setTimeout(firstRed , 1500)
+        })
+
+        function firstRed(){
+            console.log("firstRed")
+            ball1.classList.remove("off");
+            ball1.classList.add("red");
+
+            setTimeout( secondRed, 1500)
+        }
+
+        function secondRed(){
+            console.log("secondRed")
+            ball2.classList.remove("off");
+            ball2.classList.add("red");
+
+            setTimeout( thirdRed, 1500)
+        }
+
+        function thirdRed(){
+            console.log("thirdRed")
+            ball3.classList.remove("off");
+            ball3.classList.add("red");
+
+            setTimeout( green, 1500)
+        }
+
+        function green(){
+            console.log("green")
+            ball1.classList.remove("red");
+            ball2.classList.remove("red");
+            ball3.classList.remove("red");
+
+            time =new Date();
+
+            ball1.classList.add("green");
+            ball2.classList.add("green");
+            ball3.classList.add("green");
+
+            
+        }
+
+        buttonStop.addEventListener("click", function(){
+            console.log("CLICK!!!")
+            time1 = new Date();
+
+            let point = time1-time;
+
+            let punteggio = document.querySelector(".point");
+            punteggio.innerHTML= "il tuo punteggio è " + point + "millisecondi";
+
+        })
+
+    </script>
     
 </body>
 </html>
